@@ -1,0 +1,38 @@
+body {
+  background-color: #cbcacb;
+}
+.container {
+  background-color: #fff;
+}
+.logo {
+  width: 120px;
+}
+.redes-sociales {
+  height: 100px;
+  padding-top: 60px;
+  display: block;
+  float: right;
+  text-align:
+}
+nav ul li {
+  background-color: #FBAF3A;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: black;
+  font-weight: bold;
+}
+nav ul li a {
+  color: black;
+}
+nav ul li a:hover {
+  color: #FBAF3A;
+}
+nav ul li:hover {
+  background-color: #000;
+  color: #FBAF3A;
+}
+.active {
+  background-color: #000;
+  color: #FBAF3A;
+}

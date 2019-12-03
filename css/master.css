@@ -4,11 +4,11 @@
 .logo {
   width: 120px;
 }
-.redes-sociales {
-  /* height: 100px; */
-  /* padding-top: 60px; */
-  display: block;
-  float: right;
+div a i {
+  color: #000000;
+}
+div a i:hover {
+  color: #fbaf3a;
 }
 nav ul li {
   border-radius: 5px;

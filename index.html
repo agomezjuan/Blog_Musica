@@ -6,64 +6,118 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/master.css">
-  <script src="https://kit.fontawesome.com/3a2483d4ba.js" crossorigin="anonymous"></script>
   <title>Blog de Música</title>
 </head>
 <body>
   <div class="container">
-    <header class="container">
-      <div class="col-lg-12">
+    <header class="row">
+      <div class="col-sm-12 col-md-8">
         <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png"></a>
-        <div class="redes-sociales">
-          <i class="fab fa-youtube-square fa-2x"></i>
-          <i class="fab fa-facebook-square fa-2x"></i>
-          <i class="fab fa-instagram fa-2x"></i>
-          <i class="fab fa-pinterest-square fa-2x"></i>
-          <i class="fab fa-twitter-square fa-2x"></i>
-        </div>
+      </div>
+      <div class="redes-sociales">
+        <i class="fab fa-youtube-square fa-2x"></i>
+        <i class="fab fa-facebook-square fa-2x"></i>
+        <i class="fab fa-instagram fa-2x"></i>
+        <i class="fab fa-pinterest-square fa-2x"></i>
+        <i class="fab fa-twitter-square fa-2x"></i>
       </div>
     </header>
-    <nav class="container-fluid">
+  </div>
+
+  <nav class="bg-light pt-3 pb-3">
+    <div class="container bg-light">
       <ul class="nav nav-pills nav-fill">
-        <li class="nav-item">
+        <li class="nav-item col-md-2 my-1">
           <a class="nav-link active" href="#">Inicio</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item col-md-2 my-1">
           <a class="nav-link" href="#">Artistas</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item col-md-2 my-1">
           <a class="nav-link" href="#">Grupos</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item col-md-2 my-1">
           <a class="nav-link" href="#">Top 10</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item col-md-2 my-1">
           <a class="nav-link" href="#">Letras</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item col-md-2 my-1">
           <a class="nav-link" href="#">Acordes</a>
         </li>
       </ul>
-    </nav>
+    </div>
+  </nav>
+  <div class="container pt-3">
     <div class="row">
       <div class="col-lg-8">
         <section>
-          <p>Entrada de Blog</p>
-          <p>Otra entrada</p>
+          <div class="entrada bg-light">
+            <div class="articulo col-sm-12 px-3">
+              <h2 class="h2 mb-3">Titulo de la entrada 1</h2>
+              <img src="img/imagen-blog1.jpg" class="rounded float-right w-50 ml-3 mt-2" alt="Entrada de Blog">
+              <p class="text-justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="comentarios col-12 form-row my-2">
+                <div class="float-left">
+                  <img src="img/images.png" alt="User" class="user mt-2">
+                </div>
+                <div class="form-group col d-inline-flex my-2">
+                  <textarea class="form-control" rows="2" placeholder="Deje su comentario..."></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="entrada bg-light">
+            <div class="articulo col-sm-12 px-3">
+              <h2 class="h2 mb-3">Titulo de la entrada 2</h2>
+              <img src="img/imagen-blog2.jpg" class="rounded float-left w-50  mr-3 mt-2" alt="Entrada de Blog">
+              <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="comentarios col-12 form-row my-2">
+              <div class="float-left">
+                <img src="img/images.png" alt="User" class="user mt-2">
+              </div>
+              <div class="form-group col d-inline-flex my-2">
+                <textarea class="form-control" rows="2" placeholder="Deje su comentario..."></textarea>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-4 mh-100 mb-3 bg-light">
         <aside class="">
-          <p>Barra lateral</p>
+          <div class="col-12">
+            <div class="input-group my-4">
+              <input type="text" class="form-control" placeholder="Encuentra tu música" aria-label="Encuentra tu música" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+              <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+              <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+              <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+              <a href="#" class="list-group-item list-group-item-action" aria-disabled="true">Vestibulum at eros</a>
+              <a href="#" class="list-group-item list-group-item-action">Cras justo odio</a>
+              <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+              <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+              <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+              <a href="#" class="list-group-item list-group-item-action" tabindex="-1" aria-disabled="true">Vestibulum at eros</a
+            </div>
+          </div>
         </aside>
       </div>
     </div>
-
   </div>
-  <!--  Scripts Bootstrap  -->
-  <script src="js/jquery.js" charset="utf-8"></script>
-  <script src="js/bootstrap.bundle.min.js" charset="utf-8"></script>
-  <script src="js/bootstrap.min.js" charset="utf-8"></script>
-  <script src="js/app.js" charset="utf-8"></script>
+</div>
+<!--  Scripts Bootstrap  -->
+<script src="js/jquery.js" charset="utf-8"></script>
+<script src="js/bootstrap.bundle.min.js" charset="utf-8"></script>
+<script src="js/bootstrap.min.js" charset="utf-8"></script>
+<script src="js/app.js" charset="utf-8"></script>
 </body>
 </html>

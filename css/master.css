@@ -1,6 +1,3 @@
-body {
-  background-color: #cbcacb;
-}
 .container {
   background-color: #fff;
 }
@@ -8,31 +5,58 @@ body {
   width: 120px;
 }
 .redes-sociales {
-  height: 100px;
-  padding-top: 60px;
+  /* height: 100px; */
+  /* padding-top: 60px; */
   display: block;
   float: right;
-  text-align:
 }
 nav ul li {
-  background-color: #FBAF3A;
   border-radius: 5px;
-  margin-left: 10px;
-  margin-right: 10px;
   color: black;
   font-weight: bold;
 }
 nav ul li a {
+  background-color: #fbaf3a;
   color: black;
 }
 nav ul li a:hover {
-  color: #FBAF3A;
+  color: #000;
 }
-nav ul li:hover {
-  background-color: #000;
-  color: #FBAF3A;
+nav ul li a:hover {
+  background-color: #b37a13;
 }
 .active {
-  background-color: #000;
-  color: #FBAF3A;
+  background-color: #000 !important;
+  color: #FBAF3A !important;
+}
+.active:hover {
+  background-color: #b37a13;
+}
+.entrada {
+  padding: 6px;
+  margin-bottom: 15px;
+}
+.articulo {
+  padding: 12px;
+}
+.comentarios {
+  margin-bottom: 15px;
+}
+.user {
+  border-radius: 50%;
+  width: 38px;
+}
+.form-control:focus {
+  border-color: #b37a13;
+  box-shadow: inset 0 1px 1px rgba(251, 175, 58, 0.075), 0 0 8px rgba(251, 175, 58, 0.6);
+}
+.btn-outline-secondary {
+  color: #fbaf3a;
+  font-weight: bold;
+  background-color: #000000;
+}
+.btn-outline-secondary:hover {
+  color: #000000;
+  font-weight: bold;
+  background-color: #b37a13;
 }

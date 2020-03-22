@@ -6,6 +6,7 @@
 }
 div a i {
   color: #000000;
+  margin-left: 10px;
 }
 div a i:hover {
   color: #fbaf3a;

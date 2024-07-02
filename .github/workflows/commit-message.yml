@@ -6,6 +6,43 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
       - run: npm install @commitlint/cli @commitlint/config-conventional
-      - run: npx commitlint --from ${{ github.event.pull_request.base.sha }} --to ${{ github.event.pull_request.head.sha }} --verbose
+
+      - name: Run commitlint
+        id: commitlint
+        run: |
+          npx commitlint --from ${{ github.event.pull_request.base.sha }} --to ${{ github.event.pull_request.head.sha }} --verbose > commitlint-result.txt
+          echo "::set-output name=result::$(cat commitlint-result.txt)"
+
+      - name: Check commitlint result
+        id: check_result
+        run: |
+          if grep -q '✖' commitlint-result.txt; then
+            echo "Commit messages do not meet the standards"
+            exit 1
+          else
+            echo "Commit messages are valid"
+          fi
+
+      - name: Add comment to PR if commitlint fails
+        if: failure()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { GITHUB_TOKEN } = process.env;
+            const octokit = new github.getOctokit(GITHUB_TOKEN);
+            const context = github.context;
+            const prNumber = context.payload.pull_request.number;
+
+            await octokit.rest.issues.createComment({
+              ...context.repo,
+              issue_number: prNumber,
+              body: 'The commit messages do not meet the conventional commits standard. Please update the commit messages to follow the guidelines.'
+            });
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
